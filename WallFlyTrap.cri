@@ -1,0 +1,22 @@
+WallFlyTrap
+ifenemy 0 16
+ifempty 0 8 
+ifwall 0 10
+ifrandom 6
+right
+left
+go 1
+hop
+go 1
+right
+right
+right
+right
+write r1 1
+ifenemy 0 17
+infect
+ifhungry 19
+infect
+eat
+ifgt r1 r2 15
+go 1
