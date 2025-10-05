@@ -1,0 +1,54 @@
+Smart Fly Trap
+ifenemy 0 +2
+go +6
+ifstarving +3
+infect
+go 1
+eat
+go 1
+ifally 0 17
+ifally 45 17
+ifally 90 17
+ifally 135 17
+ifally 180 17
+ifally 225 17
+ifally 270 17
+ifally 315 17
+ifempty 0 28
+ifempty 0 30
+ifempty 45 +2
+go +3
+right
+go 1
+ifempty 315 +2
+go +3
+left
+go 1
+left
+go 1
+hop
+go 1
+ifeq r1 r10 +13
+ifempty 45 +2
+go +4
+write r1 1
+right
+go 1
+ifempty 315 +2
+go +4
+write r1 0
+left
+go 1
+infect
+go 1
+ifempty 315 +2
+go +4
+write r1 0
+left
+go 1
+ifempty 45 +2
+go +4
+write r1 1
+right
+go 1
+infect
